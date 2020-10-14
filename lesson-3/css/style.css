@@ -16,7 +16,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
+a {
+  text-decoration: none;
+}
 ul, ol {
   list-style-type: none;
 }
@@ -286,4 +288,100 @@ ul, ol {
   padding: 11px 0;
   margin: 0 auto 20px;
   cursor: pointer;
+}
+
+.prices-item-button:hover {
+  background-color: #f0cd06;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.251), 0 10px 10px rgba(0, 0, 0, 0.22); 
+}
+.prices-item-button:active {
+  background-color:#b19912;
+  border: none;
+}
+/*      FOOTER     */
+.footer {
+  background-color: #445162;
+  padding: 50px 0;
+}
+.footer .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer-title {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 31px;
+}
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-right: 46px;
+}
+.footer-button {
+  text-transform: uppercase;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #445162;
+  padding: 6px 48px;
+  width: 140px;
+  align-self: center;
+  cursor: pointer;
+}
+.footer-contacts {
+  width: 240px;
+}
+input[type="text"], input[type="email"], textarea {
+  border-radius: 5px;
+  border: none;
+  padding: 14px 9px;
+  margin-bottom: 21px;
+}
+textarea {
+  resize: none;
+}
+
+input::placeholder, textarea::placeholder {
+  font-family: 'ArialMT';
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #445162;
+}
+.footer-button:hover {
+  background-color: #f5edc2;
+  box-shadow: 0 14px 15px rgba(0, 0, 0, 0.251), 0 10px 10px rgba(0, 0, 0, 0.22); 
+}
+.footer-button:active {
+  background-color:#7e7a61;
+  border: none;
+}
+.footer-list-item {
+  margin-bottom: 30px;
+}
+.skype, .isq, .email, .phone {
+  color: #ffffff;
+}
+.skype:hover, 
+.isq:hover, 
+.email:hover, 
+.phone:hover {
+  color: gray;
+}
+input[type="text"]:hover, 
+input[type="email"]:hover, 
+textarea:hover {
+  box-shadow: inset 3px 4px 5px #fa6868;
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+textarea:focus {
+  box-shadow: inset 3px 4px 5px #7bf58b;
 }
